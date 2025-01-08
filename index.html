@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SangHun's Web Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -28,10 +29,10 @@
         </div>
         <section>
             <div class="wrap" style="background-color: #fff3fe;">
-                <div class="about-myfaceimg reveal">
+                <div class="about-myfaceimg hidden">
                     <img class="myimg" src="images/main/myimg.jpeg">
                 </div>
-                <div class="about-sklis">
+                <div class="about-sklis hidden">
                     <p class="hashtag reveal2"> #끊임없는!&nbsp;#노력하는!&nbsp;#배움에끝은없다!</p>
                     <div class="reveal2">
                         <p class="ab-p">안녕하세요! 배움에 겁이 없는<br>웹 개발자 박상훈입니다!</p>
@@ -60,9 +61,10 @@
             </div>
         </section>
         <section>
+            <!-- 히스토리 영역 -->
             <div class="history__article">
                 <div class="history__wrap">
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank"
                             href="https://docs.google.com/spreadsheets/d/18VKk3mZAMBw4urr8ZgOMfqCM_zKsNrbMq6JaFkkUano/edit#gid=0"
@@ -86,7 +88,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank"
                             href="https://docs.google.com/spreadsheets/d/1XSh-IOTxpKB3Ke0gzqLPEfhZusnqMOclKhfQbAf3dnc/edit?gid=0#gid=0">
@@ -108,7 +110,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/weddinglerymore.html">
                             <div class="history__work__item__img" style="background-color: #fe5ad0c5;">
@@ -128,7 +130,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/reluxmore.html">
                             <div class="history__work__item__img" style="background-color: #4723e4d0;">
@@ -148,7 +150,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/htmlstudymore.html">
                             <div class="history__work__item__img" style="background-color: #4d4d7b;">
@@ -169,7 +171,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/tmmediamore.html">
                             <div class="history__work__item__img" style="background-color: #3b8dd0;">
@@ -190,7 +192,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/gridmore.html">
                             <div class="history__work__item__img" style="background-color: #494949;">
@@ -212,7 +214,7 @@
                         </a>
                     </div>
 
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/cocoamore.html">
                             <div class="history__work__item__img" style="background-color: #cef852;">
@@ -233,7 +235,7 @@
                         </a>
                     </div>
 
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/LostArkMore.html">
                             <div class="history__work__item__img" style="background-color: #242520;">
@@ -255,7 +257,7 @@
                         </a>
                     </div>
 
-                    <div class=history__work__item>
+                    <div class="history__work__item hidden">
                         <div class="history__work__item__img__clone"></div>
                         <a target="_blank" href="PageDetail/Gptmore.html">
                             <div class="history__work__item__img" style="background-color: #7611b9;">
@@ -279,7 +281,49 @@
                 </div>
             </div>
         </section>
+        <!-- 히스토리 영억 -->
+        <section>
+            <div id="tmembership">
+                <div class="wrap" style="background: #8d41f8;">
+                    <div id="work">
+                        <div class="wrap-work-img reveal">
+                            <img class="wrap-img" src="images/main/iphone.png" alt="iphone">
+                            <img class="wrap-img-gif" src="images/main/work__gif/Tabling.gif" alt="tmembership">
+                        </div>
+                        <div class="work-wrap">
+                            <div class="reveal2">
+
+                                <strong class="workdetail">Work Detail - 21.10 ~ 22.01</strong>
+                                <h2 class="workname">T 멤버십(QA)</h2>
+                                <div class="work-lang">
+                                    <span class="work-tc">*해당 TC는 실제 업무에 사용된 파일이 아닌 임시로 제작된 파일입니다.</span>&nbsp;
+                                </div>
+                            </div>
+                            <div class="reveal3">
+                                <div class="work-detail-wrap">
+                                    <p class="work-detail">
+                                        와이즈스톤에서 6개월 동안 SKM 1팀의 연구원으로 활동하였습니다. 입사 당시에는 티멤버쉽 앱의 검증을 주도적으로 진행하였습니다. </p>
+                                    <br>
+                                    <p class="work-detail">앱의 출시 당일부터 이후에도 지속적으로 사후 검증을 진행하여 사용자 경험을 개선하고 앱의 안정성을 유지하는 데
+                                        기여하였습니다.
+                                    </p>
+                                </div>
+                                <div class="work-link">
+                                    <a href="https://docs.google.com/spreadsheets/d/18VKk3mZAMBw4urr8ZgOMfqCM_zKsNrbMq6JaFkkUano/edit#gid=0"
+                                        target="_blank" class="work-link-more">→
+                                        &nbsp; 테스트 케이스 상세 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="js/updownObserver.js"></script>
+
+    <script></script>
 </body>
 
 </html>

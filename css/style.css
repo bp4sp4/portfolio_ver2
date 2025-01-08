@@ -39,7 +39,6 @@
 
 #information__header {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: black;
     padding-top: 1rem;
@@ -92,80 +91,14 @@
     background-color: rgb(173, 255, 148);
 }
 
-.wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-
-
-.about-myfaceimg {
-    width: 600px;
-    height: 600px;
-    border-radius: 15%;
-    overflow: hidden;
-    border: none;
-}
-
-.about-myfaceimg .myimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.about-sklis {
-    font-size: 25px;
-    margin-left: 200px;
-
-}
-
-.about-sklis .hashtag {
-    font-size: 30px;
-    color: #fe8c13;
-    font-weight: 800;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-.about-sklis strong {
-    display: inline;
-    box-shadow: inset 0 -7px 0 #fe8c13;
-    color: #000;
-}
-
-.ap-company-wrap {
-    line-height: 0;
-}
-
-.ab-p {
-    color: #525252;
-    padding: 1rem 0 1rem 0;
-    line-height: 2rem;
-}
-
-.ab-company {
-    color: #525252;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding: 1rem 0;
-    font-weight: 600;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-/* history */
-
-
-
-
 .history__article {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    max-width: 256rem;
-    padding: 5rem 5rem;
+    padding: 5rem 0 5rem 0;
     overflow-y: auto;
+    background: linear-gradient(135deg, #f8e8e0, #e0c1e3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .history__article .history__wrap {
@@ -226,7 +159,6 @@
     position: relative;
     width: 22rem;
     height: 18rem;
-    border: 1px solid #a5a5a5;
     flex-direction: column;
     overflow: hidden;
     z-index: 9;
@@ -240,11 +172,13 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    gap: 10px;
 }
 
 .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day {
     display: flex;
     align-items: center;
+    margin-top: 1rem;
     gap: 1rem;
 
 }
@@ -281,7 +215,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    color: rgb(201 201 201);
+    color: rgb(97 97 97);
 }
 
 .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li {
@@ -290,7 +224,7 @@
 
 .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li::after {
     content: "/";
-    color: rgb(201 201 201);
+    color: rgb(97 97 97);
     margin: 0 0.5rem;
 }
 
@@ -301,5 +235,5 @@
 
 .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang .history__work__item__company {
     font-size: 1.2rem;
-    color: rgb(201 201 201);
+    color: rgb(97 97 97);
 }
