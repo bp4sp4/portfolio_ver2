@@ -29,14 +29,16 @@ a:active {
     transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
+.hidden2 {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
 .visible {
     transform: translateY(0);
     opacity: 1;
 }
-
-
-
-
 
 
 @font-face {
@@ -56,7 +58,6 @@ a:active {
     top: 0px;
     left: 0;
     width: 100%;
-    border-top: 1px solid #fff;
     color: #fff;
     text-align: center;
     font-size: 13px;

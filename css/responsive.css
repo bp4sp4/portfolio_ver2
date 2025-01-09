@@ -65,7 +65,7 @@
 
     .about-sklis .hashtag {
         font-size: 1.2em;
-        text-align: center;
+        line-height: 4rem;
         color: #fe8c13;
         font-weight: 800;
         font-family: 'JalnanGothic';
@@ -75,10 +75,12 @@
     .ab-p {
         color: #525252;
         font-size: 12px;
+        line-height: 1rem;
+        margin-bottom: 20px;
     }
 
     .ab-company {
-        line-height: 0;
+        line-height: 1rem;
         padding: 4px 0;
         word-break: keep-all;
         font-size: 12px;
@@ -124,9 +126,9 @@
     #work .work-wrap .workdetail {
         opacity: 1;
         color: #c6c6c6;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 500;
-        line-height: 1rem;
+        line-height: 2rem;
         font-family: 'Noto Sans KR', sans-serif;
     }
 
@@ -134,7 +136,7 @@
     #work .work-wrap .workname {
         font-size: 2.0rem;
         font-weight: 800;
-        line-height: 0;
+        line-height: 4rem;
         word-break: keep-all;
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -165,7 +167,7 @@
     .work-detail {
         word-wrap: break-word;
         color: #000;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         font-weight: 500;
         line-height: 180%;
         word-break: keep-all;
@@ -219,15 +221,17 @@
         font-size: 2rem;
         color: #fff;
         font-weight: 600;
+        margin-bottom: 3rem;
     }
 
     .footer-lorem {
         font-size: 1rem;
+        line-height: 1.3rem;
     }
 
     .footer-email {
         font-size: 2rem;
-        line-height: 0;
+        line-height: 2rem;
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -237,6 +241,7 @@
         position: relative;
         margin-left: 30px;
         display: inline-block;
+        margin-top: 1rem;
     }
 
     .footer-link>svg {
@@ -263,7 +268,7 @@
 
     #arrow {
         position: absolute;
-        top: 9px;
+
         left: -30px;
     }
 
@@ -417,8 +422,8 @@
     }
 
     .work__article .work__article__wrap .work__article_imgs {
-        width: 16rem;
-        height: 14rem;
+        width: 14rem;
+        height: 12rem;
         margin-right: 0.5rem;
         border-radius: 0.6rem;
         margin-bottom: 0.5rem;
@@ -499,12 +504,12 @@
         display: none;
         position: fixed;
         top: 50%;
-        left: 50%;
+        left: 47%;
         transform: translate(-50%, -50%);
         z-index: 9999;
         background-color: white;
         padding: 20px;
-        width: 85%;
+        width: 70%;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
@@ -520,11 +525,120 @@
         font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
+        margin-top: 1rem;
     }
 
     .popup__image2 {
         max-width: 20rem;
         height: 30rem;
+    }
+
+
+    .history__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0 5rem 0;
+        overflow-y: auto;
+        background: linear-gradient(135deg, #f8e8e0, #e0c1e3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .history__article .history__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 120rem;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .history__article .history__wrap .history__work__item a {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        position: relative;
+        width: 22rem;
+        height: 18rem;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img img {
+        width: 50%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day strong {
+        font-size: 2rem;
+        font-family: 'TheJamsil5Bold';
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day p {
+        font-size: 1rem;
+        padding-top: 0.3rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img__clone {
+        display: none;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: rgb(97 97 97);
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li {
+        font-size: 1.2rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li::after {
+        content: "/";
+        color: rgb(97 97 97);
+        margin: 0 0.5rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li:last-child::after {
+        content: "";
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang .history__work__item__company {
+        font-size: 1.2rem;
+        color: rgb(97 97 97);
     }
 
 
@@ -590,7 +704,7 @@
 
     .about-sklis .hashtag {
         font-size: 1.6em;
-        text-align: center;
+        line-height: 3rem;
         color: #fe8c13;
         font-weight: 800;
         font-family: 'JalnanGothic';
@@ -600,13 +714,15 @@
     .ab-p {
         color: #525252;
         font-size: 1.3em;
+        line-height: 1.5rem;
+        margin-bottom: 20px;
     }
 
     .ab-company {
-        line-height: 0;
+        line-height: 1rem;
         padding: 4px 0;
         word-break: keep-all;
-        font-size: 1.1em;
+        font-size: 1.5em;
     }
 
     .wrap-po {
@@ -651,14 +767,14 @@
         color: #c6c6c6;
         font-size: 1.3rem;
         font-weight: 500;
-        line-height: 1rem;
+        line-height: 2rem;
         font-family: 'Noto Sans KR', sans-serif;
     }
 
     #work .work-wrap .workname {
         font-size: 3.4rem;
         font-weight: 800;
-        line-height: 0;
+        line-height: 6rem;
         word-break: keep-all;
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -749,16 +865,18 @@
         font-size: 2.5rem;
         color: #fff;
         font-weight: 600;
+        margin-bottom: 3rem;
     }
 
     .footer-lorem {
-        font-size: 2.3rem;
+        font-size: 1.3rem;
+        line-height: 2.6rem;
     }
 
     .footer-email {
-        font-size: 4.5rem;
-        line-height: 0;
-        margin-top: 10px;
+        font-size: 4rem;
+        line-height: 2rem;
+        margin-top: 2rem;
         margin-bottom: 40px;
     }
 
@@ -767,6 +885,7 @@
         position: relative;
         margin-left: 50px;
         display: inline-block;
+        margin-top: 2rem;
     }
 
     .footer-link::after {
@@ -788,7 +907,6 @@
 
     #arrow {
         position: absolute;
-        top: 9px;
         left: -50px;
     }
 
@@ -1018,6 +1136,7 @@
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
     }
 
     .work-link-more {
@@ -1031,6 +1150,7 @@
         font-size: 20px;
         font-weight: 500;
         cursor: pointer;
+        margin-top: 1rem;
     }
 
     .work-link-more:hover {
@@ -1043,6 +1163,158 @@
     .popup__image2 {
         max-width: 20rem;
     }
+
+    .history__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0 5rem 0;
+        overflow-y: auto;
+        background: linear-gradient(135deg, #f8e8e0, #e0c1e3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .history__article .history__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 120rem;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .history__article .history__wrap .history__work__item {
+        float: left;
+        position: relative;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type() {
+        left: -14.4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+1) {
+        left: -10.8rem;
+        margin-bottom: 4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+2) {
+        left: 10.8rem;
+        margin-bottom: 4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+3) {
+        left: -10.8rem;
+        margin-bottom: 8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+4) {
+        left: 10rem;
+        margin-bottom: 4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+4) {
+        margin-top: -4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+5) {
+        left: -10rem;
+    }
+
+
+    .history__article .history__wrap .history__work__item a {
+        display: block;
+        width: 100%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        position: relative;
+        width: 22rem;
+        height: 18rem;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img img {
+        width: 65%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day strong {
+        font-size: 2rem;
+        font-family: 'TheJamsil5Bold';
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day p {
+        font-size: 1rem;
+        padding-top: 0.3rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img__clone {
+        width: 22rem;
+        height: 18rem;
+        background-color: rgb(201 201 201 / 34%);
+        position: absolute;
+        top: 6rem;
+        left: 2.5rem;
+        border-radius: 2rem;
+        z-index: 0;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: rgb(97 97 97);
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li {
+        font-size: 1.2rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li::after {
+        content: "/";
+        color: rgb(97 97 97);
+        margin: 0 0.5rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li:last-child::after {
+        content: "";
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang .history__work__item__company {
+        font-size: 1.2rem;
+        color: rgb(97 97 97);
+    }
+
 
 }
 
@@ -1119,9 +1391,9 @@
     }
 
     .about-sklis .hashtag {
-        font-size: 1.2em;
-        text-align: center;
+        font-size: 1.5em;
         color: #fe8c13;
+        line-height: 2rem;
         font-weight: 800;
         font-family: 'JalnanGothic';
 
@@ -1130,13 +1402,15 @@
     .ab-p {
         color: #525252;
         font-size: 1.3em;
+        line-height: 1rem;
+        margin-bottom: 20px;
     }
 
     .ab-company {
-        line-height: 0;
+        line-height: 1rem;
         padding: 4px 0;
         word-break: keep-all;
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     .wrap-po {
@@ -1180,7 +1454,7 @@
     #work .work-wrap .workdetail {
         opacity: 1;
         color: #a5a5a5;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1rem;
         font-family: 'Noto Sans KR', sans-serif;
@@ -1188,9 +1462,9 @@
 
 
     #work .work-wrap .workname {
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: 800;
-        line-height: 0;
+        line-height: 2;
         word-break: keep-all;
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -1251,19 +1525,20 @@
     .footer-cont {
         display: inline;
         box-shadow: inset 0 -100px 0 #015501;
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 3rem;
         color: #fff;
         font-weight: 600;
     }
 
     .footer-lorem {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
 
     .footer-email {
         font-size: 4.5rem;
-        line-height: 0;
-        margin-top: 10px;
+        line-height: 3rem;
+        margin-top: 2rem;
         margin-bottom: 40px;
     }
 
@@ -1271,6 +1546,7 @@
         font-size: 2rem;
         position: relative;
         margin-left: 50px;
+        margin-top: 1rem;
         display: inline-block;
     }
 
@@ -1293,7 +1569,6 @@
 
     #arrow {
         position: absolute;
-        top: 9px;
         left: -50px;
     }
 
@@ -1304,7 +1579,7 @@
 
     .wrap-img-gif {
         position: absolute;
-        left: 27.5rem;
+        left: 28rem;
         width: 8.7rem;
         height: 15.5rem;
     }
@@ -1533,7 +1808,7 @@
     }
 
     .work-link-more {
-        padding: 15px 60px;
+        padding: 10px 30px;
         border: 1px solid #fff;
         border-radius: 100px;
         text-align: center;
@@ -1554,6 +1829,153 @@
 
     .popup__image2 {
         max-width: 20rem;
+    }
+
+    .history__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0 5rem 0;
+        overflow-y: auto;
+        background: linear-gradient(135deg, #f8e8e0, #e0c1e3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .history__article .history__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 120rem;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .history__article .history__wrap .history__work__item {
+        float: left;
+        position: relative;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type() {
+        left: -16.4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+1) {
+        left: -18.8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+2) {
+        left: 16.8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+3) {
+        left: -17.8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+4) {
+        left: 14rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+4) {
+        margin-top: -4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+5) {
+        left: -14rem;
+    }
+
+
+    .history__article .history__wrap .history__work__item a {
+        display: block;
+        width: 100%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        position: relative;
+        width: 22rem;
+        height: 18rem;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img img {
+        width: 65%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day strong {
+        font-size: 2rem;
+        font-family: 'TheJamsil5Bold';
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day p {
+        font-size: 1rem;
+        padding-top: 0.3rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img__clone {
+        width: 22rem;
+        height: 18rem;
+        background-color: rgb(201 201 201 / 34%);
+        position: absolute;
+        top: 6rem;
+        left: 2.5rem;
+        border-radius: 2rem;
+        z-index: 0;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: rgb(97 97 97);
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li {
+        font-size: 1.2rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li::after {
+        content: "/";
+        color: rgb(97 97 97);
+        margin: 0 0.5rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li:last-child::after {
+        content: "";
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang .history__work__item__company {
+        font-size: 1.2rem;
+        color: rgb(97 97 97);
     }
 
 }
@@ -1679,7 +2101,7 @@
 
     .work-lang {
         display: inline-block;
-        margin: 1rem 0 1rem;
+        margin: 0.5rem 0 1rem;
     }
 
     .work-lang-name {
@@ -1746,13 +2168,17 @@
     .footer-cont {
         display: inline;
         box-shadow: inset 0 -100px 0 #015501;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
         color: #fff;
         font-weight: 600;
     }
 
     .footer-lorem {
         font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        line-height: 1.7rem;
     }
 
     .footer-email {
@@ -1760,6 +2186,7 @@
         line-height: 0;
         margin-top: 30px;
         margin-bottom: 70px;
+        font-weight: bold;
     }
 
     .footer-link {
@@ -1789,7 +2216,7 @@
 
     #arrow {
         position: absolute;
-        top: 9px;
+
         left: -40px;
     }
 
@@ -2074,5 +2501,154 @@
 
     .popup__image2 {
         max-width: 20rem;
+    }
+
+    /* history */
+
+    .history__article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0 5rem 0;
+        overflow-y: auto;
+        background: linear-gradient(135deg, #f8e8e0, #e0c1e3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .history__article .history__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 120rem;
+        position: relative;
+        width: 100%;
+
+    }
+
+    .history__article .history__wrap .history__work__item {
+        float: left;
+        position: relative;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type() {
+        left: -16.4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+1) {
+        left: -21.8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+2) {
+        left: 18.8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+3) {
+        left: -26.8rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+4) {
+        left: 16rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+4) {
+        margin-top: -4rem;
+    }
+
+    .history__article .history__wrap .history__work__item:nth-of-type(4n+5) {
+        left: -16rem;
+    }
+
+
+    .history__article .history__wrap .history__work__item a {
+        display: block;
+        width: 100%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        position: relative;
+        width: 22rem;
+        height: 18rem;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 9;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img img {
+        width: 65%;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day strong {
+        font-size: 2rem;
+        font-family: 'TheJamsil5Bold';
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day p {
+        font-size: 1rem;
+        padding-top: 0.3rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__img__clone {
+        width: 22rem;
+        height: 18rem;
+        background-color: rgb(201 201 201 / 34%);
+        position: absolute;
+        top: 6rem;
+        left: 2.5rem;
+        border-radius: 2rem;
+        z-index: 0;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: rgb(97 97 97);
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li {
+        font-size: 1.2rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li::after {
+        content: "/";
+        color: rgb(97 97 97);
+        margin: 0 0.5rem;
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li:last-child::after {
+        content: "";
+
+    }
+
+    .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang .history__work__item__company {
+        font-size: 1.2rem;
+        color: rgb(97 97 97);
     }
 }
