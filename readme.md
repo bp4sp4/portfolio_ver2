@@ -20,8 +20,6 @@
 - fullpage.js로 내가 원하는 부분을 못만들어 다시 처음부터 제작
 - 기초틀 완성
 
-깃허브 레포지토리 옮김 - <a href="https://github.com/bp4sp4/portfolio_ver2">Portfolio\_\_ver2</a>
-
 <h2>25/01/06</h2>
 
 - CSS Grid - Gallery 추가
