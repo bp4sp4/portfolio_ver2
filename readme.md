@@ -4,6 +4,10 @@
 
 데모사이트 - <a href="https://bp4sp4.github.io/portfolio_ver2/">Portfolio\_\_ver2</a>
 
+<h2>25/01/12</h2>
+
+- Parallax Scroll 스크롤 구현 구상
+
 <h2>25/01/09</h2>
 
 - PORTFOLIO\_\_ver2
