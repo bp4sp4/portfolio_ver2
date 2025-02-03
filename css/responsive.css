@@ -567,8 +567,8 @@
         align-items: center;
         border-radius: 2rem;
         position: relative;
-        width: 22rem;
-        height: 18rem;
+        width: 16rem;
+        height: 15rem;
         flex-direction: column;
         overflow: hidden;
         z-index: 9;
@@ -594,12 +594,12 @@
     }
 
     .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day strong {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: 'TheJamsil5Bold';
     }
 
     .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__day p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding-top: 0.3rem;
     }
 
@@ -622,7 +622,7 @@
     }
 
     .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang li::after {
@@ -637,7 +637,7 @@
     }
 
     .history__article .history__wrap .history__work__item .history__work__item__desc .history__work__item__lang .history__work__item__company {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: rgb(97 97 97);
     }
 
@@ -2511,7 +2511,7 @@
         align-items: center;
         padding: 5rem 0 5rem 0;
         overflow-y: auto;
-        background: linear-gradient(135deg, #f8e8e0, #e0c1e3);
+        background: linear-gradient(135deg, #f8e8e0, #953a9e);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
