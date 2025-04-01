@@ -4,6 +4,14 @@
 
 데모사이트 - <a href="https://bp4sp4.github.io/portfolio_ver2/">Portfolio\_\_ver2</a>
 
+<h2>25/04/1</h2>
+
+- pinkshop 추가
+
+<h2>25/03/13</h2>
+
+- InteractUi overview 보기 좋게 편집
+
 <h2>25/03/12</h2>
 
 - InteractUi 추가
